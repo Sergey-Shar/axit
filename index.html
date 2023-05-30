@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="./src/styles/section-header.css" />
 	<link rel="stylesheet" href="./src/styles/tabs.css" />
 	<link rel="stylesheet" href="./src/styles/awesome.css" />
+	<link rel="stylesheet" href="./src/styles/pricing.css">
 	<title>axit</title>
 </head>
 
@@ -24,16 +25,16 @@
 				Более подробно про формы и все что с ними 
 				связано мы разберем на занятии по формам -->
 			<fieldset class="tabs__dox">
-				 <legend class="tabs__legend">Tabs</legend>
-					<input class="tabs__tab" id="tab_1" type="radio" name="tab" checked />
-					<label class="tabs__tab-label" for="tab_1"> tab 1</label>
-					<input class="tabs__tab" id="tab_2" type="radio" name="tab" />
-					<label class="tabs__tab-label" for="tab_2">
-						tab 2</label>
-	    <input class="tabs__tab" id="tab_3" type="radio" name="tab" />
-					<label class="tabs__tab-label" for="tab_3"> tab 3</label>
+				<legend class="tabs__legend">Tabs</legend>
+				<input class="tabs__tab" id="tab_1" type="radio" name="tab" checked />
+				<label class="tabs__tab-label" for="tab_1"> tab 1</label>
+				<input class="tabs__tab" id="tab_2" type="radio" name="tab" />
+				<label class="tabs__tab-label" for="tab_2">
+					tab 2</label>
+				<input class="tabs__tab" id="tab_3" type="radio" name="tab" />
+				<label class="tabs__tab-label" for="tab_3"> tab 3</label>
 			</fieldset>
-			<div class="tabs__content" >
+			<div class="tabs__content">
 				<div class="tabs__content-text">
 					<h2 class="tabs__content-title">Tabs with soft transitioning effect.</h2>
 					<p class="tabs__content-description">
@@ -86,6 +87,66 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
 						bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
 					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="pricing">
+		<div class="container">
+			<header class="section-header">
+				<h2 class="section-header__title">pricing options</h2>
+				<div class="section-header__line"></div>
+				<p class="section-header__description">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				</p>
+			</header>
+			<!-- делаем родительский флекс контейнер для карточек -->
+			<div class="pricing__content-box">
+				<!-- создаем абсолютно одинаковые карточки
+				только с разным текстом -->
+				<div class="pricing__card">
+					<h3 class="pricing__card-title">Basic</h3>
+					<p class="pricing__card-price">$10</p>
+					<dl class="pricing__card-list">
+						<dt class="pricing__card-list-term">Free for life</dt>
+						<dd class="pricing__card-list-definition">1 gb of space</dd>
+						<dd class="pricing__card-list-definition">1 gb of space</dd>
+						<dd class="pricing__card-list-definition">1 gb of space</dd>
+						<dd class="pricing__card-list-definition">1 gb of space</dd>
+						<dd class="pricing__card-list-definition">1 gb of space</dd>
+						<dd class="pricing__card-list-definition">1 gb of space</dd>
+					</dl>
+				</div>
+				<!-- для карточки которая будет выше всех
+				добавляем модификатор --hover -->
+				<div class="pricing__card pricing__card--hover">
+					<h3 class="pricing__card-title">optima</h3>
+					<p class="pricing__card-price">$20</p>
+					<dl class="pricing__card-list">
+						<dt class="pricing__card-list-term">Free for life</dt>
+						<dd class="pricing__card-list-definition">1 gb of space</dd>
+						<dd class="pricing__card-list-definition">1 gb of space</dd>
+						<dd class="pricing__card-list-definition">1 gb of space</dd>
+						<dd class="pricing__card-list-definition">1 gb of space</dd>
+						<dd class="pricing__card-list-definition">1 gb of space</dd>
+						<dd class="pricing__card-list-definition">1 gb of space</dd>
+					</dl>
+				</div>
+				<!-- сама карточка имеет заголовок, описание в виде цены и 
+				список определений. Free for life и 
+				дальше списком что входит в free -->
+				<div class="pricing__card">
+					<h3 class="pricing__card-title">pro</h3>
+						<p class="pricing__card-price">$30</p>
+					<dl class="pricing__card-list">
+						<dt class="pricing__card-list-term">Free for life</dt>
+						<dd class="pricing__card-list-definition">1 gb of space</dd>
+						<dd class="pricing__card-list-definition">1 gb of space</dd>
+						<dd class="pricing__card-list-definition">1 gb of space</dd>
+						<dd class="pricing__card-list-definition">1 gb of space</dd>
+						<dd class="pricing__card-list-definition">1 gb of space</dd>
+						<dd class="pricing__card-list-definition">1 gb of space</dd>
+					</dl>
 				</div>
 			</div>
 		</div>

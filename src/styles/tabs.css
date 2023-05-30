@@ -1,5 +1,5 @@
 .tabs {
-	padding: 5rem 0;
+	padding: var( --section-padding-top-bottom);
 }
 
 /* задаем родителю  font-size: 0; что бы убрать отступы у дочерних 

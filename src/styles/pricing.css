@@ -1,0 +1,92 @@
+.pricing {
+	padding: var(--section-padding-top-bottom);
+	background-color: rgb(245 245 245 /1);
+}
+
+/* создаем флекс контейнер 
+внутри него раскидываем элементы по краям
+и прижимаем к низу с помощью
+	align-items: flex-end; */
+.pricing__content-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+ /* на всякий случай ставим gap
+ потому что если его не будет наши 
+ карточки прилипнут к друг другу когда экран станет меньше */
+ gap: 1.2rem;
+	min-height: 500px;
+	margin-top: 3rem;
+}
+
+.pricing__card {
+	flex-basis: 370px;
+	border: 1px solid;
+	text-align: center;
+	padding: 2px;
+	background-color: #ffffff;
+	color: rgb(245 245 245 /1);
+}
+
+/* карточку с модификатором поднимаем к верхнему 
+краю с помощью 	align-self: flex-start;
+и задаем тень */
+.pricing__card--hover {
+	align-self: flex-start;
+	box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.pricing__card-title {
+  /* с помощью флекс ставим текст по центру */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+ letter-spacing: 1px;
+	height: 60px;
+	background-color: rgb(51 51 51 /1);
+	text-transform: capitalize;
+}
+
+.pricing__card-price {
+ /* с помощью флекс ставим текст по центру */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(51 51 51 /1);
+	margin: 2px 0;
+	height: 60px;
+	font-size: 2rem;
+	font-weight: bold;
+ line-height: 2.2rem;
+ letter-spacing: 1px;
+}
+
+.pricing__card-list {
+	color: rgb(51 51 51 /1);
+}
+
+.pricing__card-list-term {
+  /* с помощью флекс ставим текст по центру */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(51 51 51 /1);
+	height: 50px;
+	font-size: 1.1rem;
+	color: rgb(255 255 255 /0.5);
+}
+
+.pricing__card-list-definition {
+  /* с помощью флекс ставим текст по центру */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	border-bottom: 2px solid rgb(245 245 245 /1);
+}
+
+.pricing__card-list-definition:last-child {
+	border-bottom: none;
+}
